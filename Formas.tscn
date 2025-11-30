@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Formas.gd" id="1_script"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_1"]
+
+[node name="Formas" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="Triangulo" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, -100, 100, 100, -100, 100)
+vertex_colors = PackedColorArray(1, 0, 0, 0, 1, 0, 0, 0, 1)
+
+[node name="Hexagono" type="Polygon2D" parent="."]
+position = Vector2(300, 0)
+polygon = PackedVector2Array(100, 0, 50, -86.6025, -50, -86.6025, -100, 0, -50, 86.6025, 50, 86.6025)
+vertex_colors = PackedColorArray(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1)
+
+[node name="Estrela" type="Polygon2D" parent="."]
+position = Vector2(600, 0)
+polygon = PackedVector2Array(0, -100, 40, -40, 100, -40, 60, 10, 80, 70, 0, 40, -80, 70, -60, 10, -100, -40, -40, -40)
+vertex_colors = PackedColorArray(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1, 0.5, 0.5, 1, 1, 0.5, 0.5)
