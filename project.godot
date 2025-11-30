@@ -1,0 +1,9 @@
+[application]
+
+config/name="Exercicio01_Formas"
+run/main_scene="res://Formas.tscn"
+
+[display]
+
+window/size/width=1024
+window/size/height=600
